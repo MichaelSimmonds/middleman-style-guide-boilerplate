@@ -1,4 +1,5 @@
-## Start a new project.
+## Middleman Boilerplate
+# Leans towards non-blog static sites
 
-1. Fork this repo
-1. Rename-it then clone it on your computer
+includes Bootstrap-sass/JQuery/Autoprefixer
+Push to gh_pages branch of a repo to build to Github Pages.
