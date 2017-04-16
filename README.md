@@ -1,9 +1,8 @@
 ## Middleman Boilerplate
 # Leans towards non-blog static sites
 
-Includes Bootstrap-sass/JQuery/Autoprefixer
-Push to gh_pages branch of a repo to build to Github Pages.
-
+Includes Bootstrap-sass/JQuery/Autoprefixer/livereload
+You can turn off live reload in config.rb
 Example at https://michaelsimmonds.github.io/middleman-basic-boilerplate/
 
 Simply
@@ -11,5 +10,7 @@ Simply
 2- bundle install
 3- middleman server - To launch local server
 4- middleman deploy - To build site to gh_pages
+
+
 
 Easy!
