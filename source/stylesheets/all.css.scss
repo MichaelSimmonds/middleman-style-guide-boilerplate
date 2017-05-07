@@ -3,13 +3,17 @@
 @import "config/bootstrap_variables";
 
 // External Frameworks
-// @import "bootstrap-sprockets";
-// @import "bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
 // Our CSS
 @import "layout/*";
-@import "components/index.scss";
+@import "components/custom/index.scss";
+// @import "components/standard/index.scss"; //See Below
 @import "pages/*";
 @import "vendor/*";
+
+
+//currently the standard styles don't work at the same time as bootstrap as they are both very opinionated and make each other ugly
