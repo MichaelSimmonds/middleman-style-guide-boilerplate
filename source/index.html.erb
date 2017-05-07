@@ -1,31 +1,19 @@
 ---
-title: Middleman-Basic-Boilerplate
+title: Middleman-Style-Guide-Boilerplate
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <h3>This boilerplate uses:-</h3>
-  <p class="doc">
-    <%= link_to "JQuery-middleman", "https://github.com/jasl/jquery-middleman" %>
-  </p>
-  <p class="doc">
-    <%= link_to "Bootstrap-sass(3.6)", "https://github.com/twbs/bootstrap-sass" %>
-  </p>
-  <p class="doc">
-    <%= link_to "middleman-autoprefixer", "https://github.com/middleman/middleman-autoprefixer" %>
-  </p>
-  <p class="doc">
-    <%= link_to "middleman-livereload", "https://rubygems.org/gems/middleman-livereload/versions/3.4.6" %>
-  </p>
-  <p>__________</p>
-  <h4>Stuck?</h4>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
-</div>
-<style>
-  a {
-    text-decoration: none;
-    color: black;
-  }
-</style>
+  <%=partial "/components/standard/index"%>
+
+
+<!-- This loops through all the files in the 'custom' directory and renders them as partials. -->
+
+<% filename_array = Dir.entries("./source/components/custom").sort %>
+<% filename_array.each do |file| %>
+  <% if file.end_with?(".html.erb") %>
+    <p><%file.slice!(0)%></p>
+    <%filepath = "/components/custom/#{file}"%>
+    <div class="partial_container">
+      <%=partial filepath%>
+    </div>
+    <%end%>
+<%end %>

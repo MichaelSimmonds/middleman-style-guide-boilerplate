@@ -1,0 +1,27 @@
+/* @group Links */
+
+a {
+	text-decoration: none;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	white-space: pre-wrap;
+}
+a:link,
+a:visited {
+	color: #369;
+	border-bottom-color: #369;
+}
+a[href]:hover,
+a[href]:focus {
+	color: #c03;
+	border-bottom-color: #c03;
+}
+a:active {
+	color: #900;
+	border-bottom-color: #900;
+}
+.logo a, h1 a, h2 a, h3 a {
+	border: none;
+}
+
+/* @end Links */

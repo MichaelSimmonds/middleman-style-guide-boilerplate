@@ -3,13 +3,13 @@
 @import "config/bootstrap_variables";
 
 // External Frameworks
-@import "bootstrap-sprockets";
-@import "bootstrap";
+// @import "bootstrap-sprockets";
+// @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
 // Our CSS
 @import "layout/*";
-@import "components/*";
+@import "components/index.scss";
 @import "pages/*";
 @import "vendor/*";
