@@ -1,0 +1,26 @@
+---
+title: Middleman-Style-Guide-Boilerplate
+---
+
+
+<!-- This loops through all the files in the 'custom' directory and renders them as partials. -->
+
+
+<% filename_array = Dir.entries("./source/components/custom").sort %>
+<% filename_array.each do |file| %>
+  <% if file.end_with?(".html.erb") %>
+    <p><%file.slice!(0)%></p>
+    <%filepath = "/components/custom/#{file}"%>
+
+    <!-- create CSS path from component path to be able to view css -->
+    <!-- NOT WORKING - as the css files are concatenated. will need to remder them into pages if I want to make it available. -->
+    <%css_filepath = "#{filepath}.css"%>
+    <%css_filepath.slice!(-13 .. -5)%>
+    <%css_filepath = "./stylesheets#{css_filepath}"%>
+
+    <span><%=file%> <a href="<%=css_filepath%>">view css(not working)</a> </span>
+    <div class="partial_container">
+      <%=partial filepath%>
+    </div>
+    <%end%>
+<%end %>
