@@ -2,5 +2,5 @@
 layout: pattern
 title: form-email.html
 ---
-<label>Label text</label>
+<label><%=text.empty? ? 'Label text' : text%></label>
 <input type="email">

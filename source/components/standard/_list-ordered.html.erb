@@ -3,7 +3,7 @@ layout: pattern
 title: list-ordered.html
 ---
 <ol>
-<li>First list item</li>
-<li>Second item in a list of ordered items</li>
-<li>Third item in the list</li>
+<li><%=item1text.empty? ? "First list item" : item1text%></li>
+<li><%=item2text.empty? ? "Second item of ordered items" : item2text%></li>
+<li><%=item3text.empty? ? "Third item in the list" : item3text%></li>
 </ol>

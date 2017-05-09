@@ -1,47 +1,45 @@
 ---
 title: Middleman-Style-Guide-Boilerplate
 ---
+
 <div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <%= partial "components/standard/heading-1", :locals => {:text => 'Layout Page' }%>
-      <%= partial "components/standard/blockquote"%>
-
-      <%= partial "components/standard/heading-2"%>
-
-      <%= partial "components/standard/heading-3"%>
-      <%= partial "components/standard/list-unordered"%>
-      <div class="col-md-6">
-        <%= partial "components/standard/heading-3"%>
-        <%= partial "components/standard/text"%>
+      <div class="text-center">
+        <%= partial "components/standard/heading-1", locals: {text: 'Demo Layout page'}%>
       </div>
+      <section>
+        <%= partial "components/standard/heading-2", locals: {text: 'You can add custom headings'}%>
+        <%= partial "components/standard/text", locals: {text: 'Look in the layout-page.html.erb file. The text is passd to the view using local variables'}%>
 
-      <%= partial "components/standard/heading-3"%>
-      <%= partial "components/standard/text"%>
-      <%= partial "components/standard/list-ordered"%>
-
-      <%= partial "components/standard/form-textarea"%>
-      <%= partial "components/standard/form-select"%>
-      <%= partial "components/standard/form-buttons"%>
+      </section>
     </div>
   </div>
 </div>
 
-<%= partial "components/standard/heading-4"%>
-<%= partial "components/standard/heading-5"%>
-<%= partial "components/standard/heading-6"%>
+<%= partial "components/standard/heading-3", locals: {text: ''}%>
+<%= partial "components/standard/heading-4", locals: {text: ''}%>
+<%= partial "components/standard/heading-5", locals: {text: ''}%>
+<%= partial "components/standard/heading-6", locals: {text: ''}%>
 
+<%= partial "components/standard/text", locals: {text: ''}%>
+<%= partial "components/standard/blockquote", locals: {text: ''}%>
 
 <%= partial "components/standard/pagination"%>
 <%= partial "components/standard/pagination-first"%>
 <%= partial "components/standard/pagination-last"%>
 
+<%= partial "components/standard/list-unordered", locals: {item1: '', item2: '', item3: ''}%>
+<%= partial "components/standard/list-ordered", locals: {item1: '', item2: '', item3: ''}%>
 
-<%= partial "components/standard/feedback"%>
-<%= partial "components/standard/feedback-error"%>
+<%= partial "components/standard/feedback", locals: {text: ''}%>
+<%= partial "components/standard/feedback-error", locals: {text: ''}%>
 
-<%= partial "components/standard/form-email"%>
-<%= partial "components/standard/form-checkbox"%>
-<%= partial "components/standard/form-url"%>
-<%= partial "components/standard/form-text"%>
-<%= partial "components/standard/form-number"%>
+<%= partial "components/standard/form-buttons", locals: {text: ''}%>
+<%= partial "components/standard/form-email", locals: {text: ''}%>
+<%= partial "components/standard/form-checkbox", locals: {text: ''}%>
+<%= partial "components/standard/form-url", locals: {text: ''}%>
+<%= partial "components/standard/form-text", locals: {text: ''}%>
+<%= partial "components/standard/form-number", locals: {text: ''}%>
+<%= partial "components/standard/form-textarea", locals: {text: ''}%>
+<%= partial "components/standard/form-select", locals: {text: ''}%>

@@ -2,6 +2,6 @@
 layout: pattern
 title: form-buttons.html
 ---
-<button>Button element</button>
+<button><%=text.empty? ? 'Button element' : text%></button>
 
-<input type="submit" value="Submit button">
+<input type="submit" value="<%=text.empty? ? 'Submit button' : text%>">
