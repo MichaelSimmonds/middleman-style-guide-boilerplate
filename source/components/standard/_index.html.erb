@@ -1,38 +1,32 @@
-<div>
-  <%= partial "components/standard/heading-1"%>
-  <%= partial "components/standard/heading-2"%>
-  <%= partial "components/standard/heading-3"%>
-  <%= partial "components/standard/heading-4"%>
-  <%= partial "components/standard/heading-5"%>
-  <%= partial "components/standard/heading-6"%>
-</div>
+<aside>Typography</aside>
+<%= partial "components/standard/heading-1", locals: {text: ''}%>
+<%= partial "components/standard/heading-2", locals: {text: ''}%>
+<%= partial "components/standard/heading-3", locals: {text: ''}%>
+<%= partial "components/standard/heading-4", locals: {text: ''}%>
+<%= partial "components/standard/heading-5", locals: {text: ''}%>
+<%= partial "components/standard/heading-6", locals: {text: ''}%>
 
-<div>
-  <%= partial "components/standard/blockquote"%>
-  <%= partial "components/standard/text"%>
-</div>
+<%= partial "components/standard/blockquote", locals: {text: ''}%>
+<%= partial "components/standard/text", locals: {text: ''}%>
 
-<div>
-  <%= partial "components/standard/pagination"%>
-</div>
-<div>
-  <%= partial "components/standard/pagination-first"%>
-</div>
-<div>
-  <%= partial "components/standard/pagination-last"%>
-</div>
+<%= partial "components/standard/pagination"%>
+<br>
+<%= partial "components/standard/pagination-first"%>
+<br>
+<%= partial "components/standard/pagination-last"%>
 
-<%= partial "components/standard/list-unordered"%>
-<%= partial "components/standard/list-ordered"%>
+<%= partial "components/standard/list-unordered", locals: {item1text: '', item2text: '', item3text: ''}%>
+<%= partial "components/standard/list-ordered", locals: {item1text: '', item2text: '', item3text: ''}%>
 
-<%= partial "components/standard/feedback"%>
-<%= partial "components/standard/feedback-error"%>
+<%= partial "components/standard/feedback", locals: {text: ''}%>
+<%= partial "components/standard/feedback-error", locals: {text: ''}%>
 
-<%= partial "components/standard/form-buttons"%>
-<%= partial "components/standard/form-email"%>
-<%= partial "components/standard/form-checkbox"%>
-<%= partial "components/standard/form-url"%>
-<%= partial "components/standard/form-text"%>
-<%= partial "components/standard/form-number"%>
-<%= partial "components/standard/form-textarea"%>
-<%= partial "components/standard/form-select"%>
+<aside>Forms</aside>
+<%= partial "components/standard/form-buttons", locals: {text: ''}%>
+<%= partial "components/standard/form-email", locals: {text: ''}%>
+<%= partial "components/standard/form-checkbox", locals: {text: ''}%>
+<%= partial "components/standard/form-url", locals: {text: ''}%>
+<%= partial "components/standard/form-text", locals: {text: ''}%>
+<%= partial "components/standard/form-number", locals: {text: ''}%>
+<%= partial "components/standard/form-textarea", locals: {text: ''}%>
+<%= partial "components/standard/form-select", locals: {text: ''}%>

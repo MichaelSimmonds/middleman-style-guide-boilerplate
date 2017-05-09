@@ -2,4 +2,4 @@
 layout: pattern
 title: form-checkbox.html
 ---
-<label><input type="checkbox"> Label text</label>
+<label><input type="checkbox"><%=text.empty? ? ' Label text' : text%></label>
